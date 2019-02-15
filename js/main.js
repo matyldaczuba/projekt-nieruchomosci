@@ -1,23 +1,17 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~ RANGE SLIDERS ~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 
-// var spaceSlider = new Slider("#space-range", {
-//     id: "space-slider",
-//     min: 0,
-//     max: 12000,
-//     range: true,
-//     value: [100, 10000],
-//     focus: true
-// });
-
-// var budgetSlider = new Slider("#budget-range", {
-//     id: "budget-slider",
-//     min: 0,
-//     max: 10000,
-//     value: 7000,
-//     focus: true
-// });
-
-
+document.addEventListener(
+    "DOMContentLoaded",
+    function() {
+      let ranges = document.querySelectorAll(".range-input");
+      ranges.forEach(range =>
+        range.addEventListener("change", function() {
+          document.querySelector(`.${range.id}`).innerHTML = range.value;
+        })
+      );
+    },
+    false
+  );
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~ SELECT DISTRICT ON MAP ~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 
@@ -76,21 +70,7 @@ btnFind.addEventListener("click", () => {
 
     console.log(chekedDistricts);
 
-    // return chekedDistricts;
 });
 
-//----------ja--////
 
-document.addEventListener(
-    "DOMContentLoaded",
-    function() {
-      let ranges = document.querySelectorAll(".range-input");
-      ranges.forEach(range =>
-        range.addEventListener("change", function() {
-          document.querySelector(`.${range.id}`).innerHTML = range.value;
-        })
-      );
-    },
-    false
-  );
 

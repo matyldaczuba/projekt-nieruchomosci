@@ -8,6 +8,8 @@ body {
 
 a {
     color: rgb(75, 74, 74);
+    transition: 1s;
+
 }
 
 .header-bg {
@@ -307,7 +309,7 @@ sup {
     outline: transparent;
     padding: 15px 50px;
     text-transform: uppercase;
-    margin-top: 20px;
+    /* margin-top: 10px; */
 }
 
 .btn-custom:hover {
@@ -399,6 +401,7 @@ main {
 
 .top-offers a:hover {
     color: rgb(255, 67, 9);
+    transition: 1s;
 
 }
 
@@ -415,8 +418,10 @@ main {
     cursor: pointer;
 }
 
-.top-offers-fig:hover .overlay {
+a:hover .overlay {
     opacity: .2;
+    transition: 1.5s;
+
 }
 
 .overlay {

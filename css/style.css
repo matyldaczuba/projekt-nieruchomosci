@@ -55,7 +55,19 @@ a:hover {
 .main-nav-items {
     padding: 15px 15px;
     color: #fff;
+    position: relative;
 }
+
+/* DOKONCZYC animowane podkreslenie linkow */
+/* 
+.nav-links:hover::after {
+    content: "k";
+    transition: 5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+} */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~ FIND OFFICE ~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -138,7 +150,12 @@ a:hover {
     display: block;
     margin: 20px 0;
 } */
-.range-wrapper {
+
+
+
+
+
+/* .range-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -294,7 +311,7 @@ sup {
     position: absolute;
     pointer-events: none;
     z-index: 1;
-}
+} */
 
 
 
@@ -569,6 +586,154 @@ a:hover .overlay {
 .uppercase {
     text-transform: uppercase;
 }
+
+/* ~~~~~~~~~TRUST US BRADS ~~~~~~~~~~ */
+.trust-brand-img {
+    height: 55px;
+    /* padding: 0 10px; */
+}
+
+.trust-brand-img:nth-of-type(2n) {
+    height: 40px;
+}
+
+.trust-brand-list {
+    margin-bottom: 60px;
+    /* padding: 0 50px; */
+}
+
+/* ~~~~~~~~~CONTACT FORM ~~~~~~~~~~~~*/
+
+.contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/office.png);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.contact-form {
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.contact-form-item{
+    margin: 15px 0px;
+    margin-right: 10px; 
+    height: 40px;
+    /* width: 250px; */
+    border-radius: 50px;
+}
+.input-wrap{
+    margin: 0;
+    padding: 0;
+}
+.range-wrap{
+    width: 30%;
+
+}
+
+@media (max-width: 600px){
+    .contact-form-item{
+        margin-right: 0px; 
+        width: 80%;
+    }
+    .input-wrap{
+        margin: 0;
+        padding: 0;
+    }
+    .range-wrap{
+        width: 80%;
+    
+    }
+}
+.contact-range-wrap{
+    align-self: stretch;
+}
+
+
+ .contact__inputs-item {
+    max-width: 348px;
+}
+
+
+
+.contact__area-range {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 370px;
+}
+
+.contact__send {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+.contact__send-button {
+    font-size: 21px;
+}
+
+.contact__send-checkbox {
+    margin-left: 55px;
+    font-size: 18px;
+    position: relative;
+}
+
+.contact__send-checkbox::before {
+    background: #ffffff;
+    border-radius: 6px;
+    content: "";
+    height: 26px;
+    left: -2px;
+    position: absolute;
+    top: 5px;
+    width: 26px;
+}
+
+.contact__send-checkbox input[type="checkbox"] {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1000;
+}
+
+.contact__send-checkbox input[type="checkbox"]+label {
+    background-repeat: no-repeat;
+    background-position: 0 -50px;
+    background-image: url(../img/check.png);
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 55px;
+    position: relative;
+    vertical-align: middle;
+    z-index: 10;
+}
+
+.contact__send-checkbox input[type="checkbox"]:checked+label {
+    background-position: 0 0;
+}
+
+@media (max-width: 1200px) {
+    .contact__inputs {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 560px) {
+    .contact__send {
+        flex-direction: column;
+    }
+
+    .contact__send-checkbox {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+ 
 
 
 

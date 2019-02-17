@@ -1,0 +1,67 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~ FIND OFFICE SELECT DISTRICT ON MAP ~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+function ActiveMap() {
+    this.classList.toggle("district-active");
+    document.querySelector(`.${this.id}`).classList.toggle("text-map-active");
+}
+<article id="brands">
+        <div class="container">
+            <header class="title-wrap">
+                <h1 class="title-sec">Zaufali nam</h1>
+            </header>
+            <section class="trust-brand-list d-flex flex-wrap justify-content-around align-items-center">
+                <img class="trust-brand-img" src="img/wp.jpg" alt="WP logo">
+                <img class="trust-brand-img" src="img/alstom.png" alt="Alstom logo">
+                <img class="trust-brand-img" src="img/wp.jpg" alt="WP logo">
+                <img class="trust-brand-img" src="img/alstom.png" alt="Alstom logo">
+                <img class="trust-brand-img" src="img/wp.jpg" alt="WP logo">
+                <img class="trust-brand-img" src="img/alstom.png" alt="Alstom logo">
+            </section>
+        </div>
+    </article>
+
+
+
+    <article id="contact" class="contact">
+            <div class="container">
+                <header class="title-wrapper">
+                    <h1 class="title-bottom">Napisz do nas jakiego biura szukasz?</h1>
+                </header>
+                <section class="contact__inputs">
+                    <input class="contact__inputs-item" placeholder="Nazwa firmy/Imię i nazwisko">
+                    <input class="contact__inputs-item" placeholder="Telefon +48">
+                    <input class="contact__inputs-item" placeholder="Adres e-mail">
+                    <div class="contact__area-range">
+                        <div class="range-wrapper">
+                            <label class="range-label">Powierzchnia</label>
+                            <section class="double-range">
+                                <input class="range-input" id="area-min-2" value="100" min="0" max="12000" step="100" type="range">
+                                <input class="range-input" id="area-max-2" value="10000" min="0" max="12000" step="100"
+                                    type="range">
+                            </section>
+                            <div class="range-value-group">
+                                <span>
+                                    <span class="area-min-2">100</span>
+                                    m<sup>2</sup>
+                                </span>
+                                <span>
+                                    <span class="area-max-2">10 000</span>
+                                    m<sup>2</sup>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact__send">
+                    <button class="btn contact__send-button">Wyślij</button>
+                    <div class="contact__send-checkbox">
+                        <input type="checkbox" id="agreement">
+                        <label for="agreement">Oświadczam, że zapoznałem/zapoznałam z treścią klauzuli informacyjnej, w tym
+                            z informacją o celu i sposobach przetwarzania danych osobowych oraz prawie dostępu do treści
+                            swoich danych i prawie ich poprawiania.</label>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+
+

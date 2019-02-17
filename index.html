@@ -15,13 +15,39 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.0/css/bootstrap-slider.css">
     <link rel="stylesheet" href="css/style.css">
-
+<link rel="stylesheet" href="css/my.css">
     <title>Wyszukiwarka biur</title>
 </head>
 
 <body>
     <div class="container-fluid header-bg">
         <header>
+
+
+                <section class="page-header-for-client">
+                        <!-- <div id="searchBtn">
+                            <form action="" autocomplete="on">
+                                <input class="nav-btn-search" id="search" name="search" type="text" placeholder="Search"><input id="search_submit" value="Rechercher" type="submit">
+                            </form>
+                        </div>
+        
+                        <div class="dropdown-main">
+        
+                            <img class="dropbtn" src="./img/pl-flag.png" alt="Alternate Text" />
+                            <img class="dropbtn dropbtn-second" src="./img/arrow-down.png" alt="arrow">
+        
+                            <div class="dropdown-content-main">
+                                <ul class="dropdown-content-list">
+                                    <li class="dropdown-list">
+                                        <a href="#"><img class="language-select" src="./img/pl-flag.png" alt="pl"></a>
+                                        <p class="language-select-text">pl</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <button class="btn-main btn-for-client btn-for-client-orange">Strefa Klienta</button>
+                        <button class="btn-main btn-for-client btn-for-client-blue">Kontakt</button>
+                    </section>
             <nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar">
                 <a class="" href="#">
                     <img src="img/logo.png" alt="logo">
@@ -91,33 +117,22 @@
             </select>
 
 
-            <div class="range-wrapper">
-                <label class="range-label">Powierzchnia</label>
-                <section class="double-range">
-                    <input class="range-input" id="area-min-1" value="100" min="0" max="12000" step="100" type="range">
-                    <input class="range-input" id="area-max-1" value="10000" min="0" max="12000" step="100" type="range"></section>
-                <div class="range-value-group">
-                    <span>
-                        <span class="area-min-1">100</span> m<sup>2</sup>
-                    </span>
-                    <span>
-                        <span class="area-max-1">10 000</span> m<sup>2</sup>
-                    </span>
-                </div>
-            </div>
-            <div class="range-wrapper">
-                <label class="range-label">Budżet</label>
-                <input class="range-input" id="pln" value="7000" min="0" max="10000" step="100" type="range">
-                <div class="range-value">
-                    <span>
-                        <span class="pln">7 000</span>
-                        PLN / <span class="euro">1627.26</span> EUR
-                    </span>
-                </div>
-            </div>
 
 
-            <input id="btn-find" class="btn btn-custom" type="submit" value="Szukaj">
+
+            <div id='id66' class="range">
+                    <div id='id66b' class='range__between'></div>
+                    <button id='id661' class="range__button_1"></button>
+                    <button id='id662' class="range__button_2"></button>
+                    <input id='id66i1' class='range_inpt1 reset-input' type='number' min='100' max='10000' value="m2">
+                    <span class="range-sup1">m</span><sup class="range-sup">2</sup>
+                    <input id='id66i2' class='range_inpt2 reset-input' type='number' min='100' max='10000'>
+                    <span class="range-sup2">m</span><sup class="range-sup">2</sup>
+                </div>
+            
+
+
+            <input id="find-office-btn" class="btn btn-custom" type="submit" value="Szukaj">
 
 
             <div class="find-office-map">
@@ -414,6 +429,7 @@
         </article>
     </div>
     <main class="container-fluid">
+
         <article class="top-offers justify-content-around" id="top-offers">
             <header class="title-wrap">
                 <h2 class="title-sec">Top oferty</h2>
@@ -506,6 +522,7 @@
                 </article>
             </section>
         </article>
+
         <article class="from-market justify-content-center" id="from-market">
             <header class="title-wrap">
                 <h2 class="title-sec">Z rynku</h2>
@@ -606,7 +623,72 @@
                 </article>
             </section>
         </article>
+
+        <article id="trust-us">
+            <div class="container">
+                <header class="title-wrap">
+                    <h1 class="title-sec">Zaufali nam</h1>
+                </header>
+                <section class="trust-brand-list d-flex flex-wrap justify-content-around align-items-center">
+                    <img class="trust-brand-img" src="img/wp.jpg" alt="WP logo">
+                    <img class="trust-brand-img" src="img/alstom.png" alt="Alstom logo">
+                    <img class="trust-brand-img" src="img/wp.jpg" alt="WP logo">
+                    <img class="trust-brand-img" src="img/alstom.png" alt="Alstom logo">
+                    <img class="trust-brand-img" src="img/wp.jpg" alt="WP logo">
+                    <img class="trust-brand-img" src="img/alstom.png" alt="Alstom logo">
+                </section>
+            </div>
+        </article>
     </main>
+
+    <article id="contact" class="contact">
+        <div class="container">
+            <header class="title-wrap">
+                <h1 class="title-bottom">Napisz do nas jakiego biura szukasz?</h1>
+            </header>
+            <form id="contact-form d-flex flex-nowrap " class="contact-form">
+                
+                <section class="input-wrap d-flex flex-wrap justify-content-between align-items-center">
+                    <input class="contact-form-item" type="text" placeholder="Nazwa firmy/Imię i nazwisko">
+                    <input class="contact-form-item" type="tel" placeholder="Telefon +48">
+                    <input class="contact-form-item" type="email" placeholder="Adres e-mail">
+
+                    <div class="range-wrap contact-range-wrap">
+                            <label class="range-label">Powierzchnia</label>
+                            <section class="double-range">
+                                <input class="range-input" id="min-area-2" value="100" min="0" max="12000" step="100" type="range">
+                                <input class="range-input" id="max-area-2" value="10000" min="0" max="12000" step="100" type="range">
+                            </section>
+                            <div class="range-value-group">
+                                <span>
+                                    <span class="min-area-2">100</span>
+                                    m<sup>2</sup>
+                                </span>
+                                <span>
+                                    <span class="max-area-2">10 000</span>
+                                    m<sup>2</sup>
+                                </span>
+                            </div>
+                        </div>
+                </section>
+
+                <section class="contact__send">
+                    <button type="submit" class="btn contact-btn btn-custom">Wyślij</button>
+                    <div class="contact__send-checkbox">
+                        <input cheked="cheked" type="checkbox" id="agreement">
+                        <label for="agreement">Oświadczam, że zapoznałem/zapoznałam z treścią klauzuli informacyjnej, w
+                            tym
+                            z informacją o celu i sposobach przetwarzania danych osobowych oraz prawie dostępu do
+                            treści
+                            swoich danych i prawie ich poprawiania.</label>
+                    </div>
+                </section>
+            </form>
+
+        </div>
+    </article>
+
+
     <footer>
         <div class="container">
             <section class="footer-links">
@@ -628,6 +710,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.0/bootstrap-slider.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/my.js"></script>
 </body>
 
 </html>

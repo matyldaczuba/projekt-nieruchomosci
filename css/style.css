@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "AvenirNext";
+    src: url("../font/Avenir-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+  }
+
+
 * {
     box-sizing: border-box;
 }
@@ -5,8 +13,9 @@ html{
     scroll-behavior: smooth;
 }
 
+
 body {
-    /* position: relative; */
+    font-family: "AvenirNext";
 }
 
 a {
@@ -57,7 +66,7 @@ a:hover {
 
 .nav-links,
 .main-nav-items {
-    padding: 15px 15px;
+    padding: 15px 0px;
     color: #fff;
     position: relative;
 }
@@ -72,6 +81,22 @@ a:hover {
 .nav-links:hover {
 	background-size: 60% .1em;
 }
+
+.navbar-collapse{
+    transition: 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    /* justify-content: center!important; */
+}
+
+@media (min-width){
+    .navbar-nav{
+        background: rgba(0, 0, 0, 0.534)!important;
+
+    }
+}
+
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~ FIND OFFICE ~~~~~~~~~~~~~~~~~~~~~~ */
 

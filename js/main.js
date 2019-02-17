@@ -5,13 +5,10 @@ document.addEventListener(
     "DOMContentLoaded",
     function () {
 
-
-
         let ranges = document.querySelectorAll(".range-input");
         ranges.forEach(range =>
             range.addEventListener("change", function () {
                 document.querySelector(`.${range.id}`).innerHTML = range.value;
-
 
             })
         );
@@ -20,28 +17,6 @@ document.addEventListener(
     },
     false
 );
-
-// Math.decimal = function(n, k) 
-// {
-//     var factor = Math.pow(10, k+1);
-//     n = Math.round(Math.round(n*factor)/10);
-//     return n/(factor/10);
-// }
-
-// console.log(Math.decimal(12.344, 2));
-
-// function currencyChange() {
-//     var pln = document.querySelector("#currency");
-//     var plnValue = pln.innerHTML;
-//     var euroRate = 4.3329;
-
-    
-//     var plnOnEuro = () = {
-//         // plnValue/euroRate
-//     }
-//     document.querySelector(`.${pln.id}`).innerHTML = plnValue;
-// }
-
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~ SELECT DISTRICT ON MAP ~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 
@@ -81,13 +56,10 @@ function changeOnSelect(currentSelect) {
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~ FIND OFFICE BUTTON FUNCTION TO KNOW WHAT DISTRICT IS SELECTED ~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 
-// console.log(districtOptions);
-
 
 var btnFindOffice = document.querySelector("#find-office-btn");
 
 btnFindOffice.addEventListener("click", () => {
-
 
     var chekedDistricts = [];
     var activeDistricts = document.querySelectorAll(".district-active");

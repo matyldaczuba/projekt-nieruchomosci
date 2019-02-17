@@ -17,8 +17,8 @@
 
 <body>
     <div class="container-fluid header-bg">
-        <button class="btn btn-contact">Kontakt</button>
-        <header class="top-navs">
+        <button id="btn-hide" class="btn btn-contact">Kontakt</button>
+        <!-- <header class="top-navs">
             <nav class="page-header-for-client">
 
                 <img class="img-in-header-ico" src="img/search-icon.png" alt="search">
@@ -37,8 +37,10 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse alert alert-color" id="navbarNav" role="alert">
                     <ul class="navbar-nav d-flex justify-content-between">
+
+                           
 
                         <li class="nav-item main-nav-items">
                             <a class="nav-links" href="#"><img src="img/home-icon.png" alt="home icon"></a>
@@ -63,7 +65,74 @@
             </nav>
 
 
-        </header>
+        </header> -->
+<!-- 
+        <section class="page-header-for-client">
+                <div id="searchBtn">
+                            <form action="" autocomplete="on">
+                                <input class="nav-btn-search" id="search" name="search" type="text" placeholder="Search"><input id="search_submit" value="Rechercher" type="submit">
+                            </form>
+                        </div>
+        
+                        <div class="dropdown-main">
+        
+                            <img class="dropbtn" src="./img/pl-flag.png" alt="Alternate Text" />
+                            <img class="dropbtn dropbtn-second" src="./img/arrow-down.png" alt="arrow">
+        
+                            <div class="dropdown-content-main">
+                                <ul class="dropdown-content-list">
+                                    <li class="dropdown-list">
+                                        <a href="#"><img class="language-select" src="./img/pl-flag.png" alt="pl"></a>
+                                        <p class="language-select-text">pl</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                <button class="btn-main btn-for-client btn-for-client-orange">Strefa Klienta</button>
+                <button class="btn-main btn-for-client btn-for-client-blue">Kontakt</button>
+            </section> -->
+
+            <nav class="page-header-for-client">
+
+                    <img class="img-in-header-ico" src="img/search-icon.png" alt="search">
+                    <img class="img-in-header-ico" src="img/pl-flag.png" alt="pl-flag">
+                    <img class="img-in-header-ico" src="img/arrow-down.png" alt="arr-down">
+    
+                    <button class="btn-main btn-for-client btn-for-client-orange">Strefa Klienta</button>
+                    <button class="btn-main btn-for-client btn-for-client-blue">Kontakt</button>
+                </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar justify-content-between">
+                <a class="" href="#">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 d-flex justify-content-between">
+                        <li class="nav-item main-nav-items">
+                            <a class="nav-links" href="#"><i class="fas fa-home-lg-alt"></i></a>
+                        </li>
+                        <li class="nav-item main-nav-items">
+                            <a class="nav-links" href="#find-office">Znajdź biuro</a>
+                        </li>
+                        <li class="nav-item main-nav-items">
+                            <a class="nav-links" href="#top-offers">Porównywarka</a>
+                        </li>
+                        <li class="nav-item main-nav-items">
+                            <a class="nav-links" href="#about-us">O nas</a>
+                        </li>
+                        <li class="nav-item main-nav-items">
+                            <a class="nav-links" href="#from-market">Nasze usługi</a>
+                        </li>
+                        <li class="nav-item main-nav-items">
+                            <a class="nav-links" href="#trust-us">Zaufali nam</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+</header>
         <article class="find-office" id="find-office">
             <h1>
                 <span class="big-h">
@@ -76,8 +145,8 @@
                 dzięki któremu w łatwy i szybki sposób porównasz
                 dostępne nieruchomości komercyjne w Warszawie.
             </p>
-
-            <select class="custom-select custom-select-lg district-select" placeholder="dzielnica">
+<div class="select-wrapper_input">
+            <select class=" district-select" placeholder="dzielnica">
                 <option selected>Dzielnica</option>
                 <option value="Mokotów">Mokotów</option>
                 <option value="Śródmieście">Śródmieście</option>
@@ -98,22 +167,29 @@
                 <option value="Wilanów">Wilanów</option>
                 <option value="Żoliborz">Żoliborz</option>
             </select>
-
+        </div>
+            <label for="#id66" class="ex6_2">Powierzchnia</label>
             <div id='id66' class="range">
                 <div id='id66b' class='range__between'></div>
                 <button id='id661' class="range__button_1"></button>
                 <button id='id662' class="range__button_2"></button>
-                <input id='id66i1' class='range_inpt1 reset-input' type='number' min='100' max='10000' value="m2">
-                <span class="range-sup1">m</span><sup class="range-sup">2</sup>
-                <input id='id66i2' class='range_inpt2 reset-input' type='number' min='100' max='10000'>
-                <span class="range-sup2">m</span><sup class="range-sup">2</sup>
-            </div>
+                <input id='id66i1' class='range_inpt1 reset-input' type='number' min='0' max='10000' value="1000">
+                <span class="range-sup1">m
+                    <sup class="range-sup">2</sup>
+                </span>
 
+                <input id='id66i2' class='range_inpt2 reset-input' type='number' min='100' max='10000'>
+                <span class="range-sup2">
+                    m<sup class="range-sup">2</sup>
+                </span>
+            </div>
+               <label class="ex6">Budżet</label>
             <input id="ex6" class='range_inpt1 reset-input' type="text" data-slider-min="0" data-slider-max="10000"
                 data-slider-step="1" data-slider-value="7000" />
+       <div class="currency">
             <span id="ex6CurrentSliderValLabel"><span id="ex6SliderVal">7000</span>PLN</span>/
             <span id="ex6CurrentSliderValLabel" class="usdCounter"><span id="ex6SliderVal2">1627.26</span>USD</span>
-
+        </div>
             <input id="find-office-btn" class="btn btn-custom" type="submit" value="Szukaj">
 
             <div class="find-office-map">
@@ -629,29 +705,24 @@
             </header>
             <form id="contact-form d-flex flex-nowrap " class="contact-form">
 
-                <section class="input-wrap d-flex flex-wrap justify-content-between align-items-center">
+                <section class="input-wrap d-flex flex-wrap align-items-center">
                     <input class="contact-form-item" type="text" placeholder="Nazwa firmy/Imię i nazwisko">
                     <input class="contact-form-item" type="tel" placeholder="Telefon +48">
                     <input class="contact-form-item" type="email" placeholder="Adres e-mail">
 
-                    <div class="range-wrap contact-range-wrap">
-                        <label class="range-label">Powierzchnia</label>
-                        <section class="double-range">
-                            <input class="range-input" id="min-area-2" value="100" min="0" max="12000" step="100" type="range">
-                            <input class="range-input" id="max-area-2" value="10000" min="0" max="12000" step="100"
-                                type="range">
-                        </section>
-                        <div class="range-value-group">
-                            <span>
-                                <span class="min-area-2">100</span>
-                                m<sup>2</sup>
+                    <div id='id66_2' class="range range-foot">
+                            <div id='id66b_2' class='range__between'></div>
+                            <button id='id661_2' class="range__button_1"></button>
+                            <button id='id662_2' class="range__button_2"></button>
+                            <input id='id66i1_2' class='range_inpt1 reset-input' type='number' min='100' max='10000' value="m2">
+                            <span class="range-sup1">m
+                                <sup class="range-sup">2</sup>
                             </span>
-                            <span>
-                                <span class="max-area-2">10 000</span>
-                                m<sup>2</sup>
+                            <input id='id66i2_2' class='range_inpt2 range_inpt2-foot reset-input' type='number' min='100' max='10000'>
+                            <span class="range-sup2">
+                                m<sup class="range-sup">2</sup>
                             </span>
                         </div>
-                    </div>
                 </section>
 
                 <section class="d-flex align-items-center">
@@ -681,9 +752,6 @@
         </div>
     </footer>
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"

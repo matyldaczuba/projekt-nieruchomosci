@@ -3,30 +3,31 @@
     src: url("../font/Avenir-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: 400;
-  }
-
+}
 
 * {
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
-
 body {
     font-family: "AvenirNext";
+    margin: 0;
+    padding: 0;
 }
 
 a {
-    /* color: rgb(75, 74, 74); */
-    transition: 1s;
-
+    color: rgb(75, 74, 74);
+    transition: .5s;
 }
 
 .header-bg {
-    background: url(../img/bg-city.png);
+    background: url(../img/bg-city.png) center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 95vh;
     padding: 0;
     text-transform: uppercase;
@@ -52,18 +53,98 @@ a:hover {
 
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~ MAIN NAVBAR ~~~~~~~~~~~~~~~~~~~~~~ */
-.top-navs{
-    position: relative;
+
+.btn {
+    border-radius: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: inherit;
+    outline: transparent;
+    padding: 14px 50px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to left, #ff5400 0%, #ff881a 100%);
 }
+
+.btn.btn-contact {
+    border-radius: 0;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    font-size: 16px;
+    position: absolute;
+    padding: 10px 50px;
+    right: -76px;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~ TOP NAVBAR CLIENT ~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.page-header {
+    left: 0;
+    padding-top: 54px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.page-header-for-client {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+}
+.btn-main {
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    outline: transparent;
+    /* padding: 20px 50px; */
+    text-transform: uppercase;
+}
+
+.btn-main.btn-for-client {
+    border-radius: 0;
+    font-size: 12px;
+    padding: 10px 0;
+    width: 120px;
+}
+
+
+.img-in-header-ico {
+    margin-right: 18px;
+}
+
+.btn-main.btn-for-client-orange {
+    background-image: linear-gradient(to left, #ff5400 0%, #ff881a 100%);
+}
+
+.btn-main.btn-for-client-blue {
+    background-image: linear-gradient(to right, #327da5 0%, #2e446b 100%);
+}
+
+.btn-main.btn-for-client-orange {
+    border-bottom-left-radius: 24px;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~ MAIN PAGE NAVBAR ~~~~~~~~~~~~~~~~~~~~~~ */
+
+
 .main-navbar {
-    height: 100px;
+    height: 50px;
     background: transparent !important;
     /* z-index: 20; */
-    /* padding: 0 40px; */
+    padding: 0 3rem;
     z-index: 50;
     font-size: 0.9em;
     position: absolute;
+    top: 40px;
     width: 100%;
 
 }
@@ -73,38 +154,40 @@ a:hover {
     padding: 15px 0px;
     color: #fff;
     position: relative;
+    text-align: center;
 }
 
-.nav-links{
+.nav-links {
     background: linear-gradient(#ff9100, #ff6600) bottom / 0 .1em no-repeat;
     transition: .5s background-size;
     white-space: nowrap;
 }
 
-.nav-links:first-of-type{
+.nav-links:first-of-type {
     margin-left: 20px;
 }
 
 .nav-links:hover {
-	background-size: 60% .1em;
+    background-size: 60% .1em;
 }
 
-.navbar-collapse{
-    transition: 1s ease-in-out;
+.navbar-collapse {
     display: flex;
     align-items: center;
     flex-grow: 0;
-    /* justify-content: center!important; */
 }
 
-@media (min-width){
-    .navbar-nav{
-        background: rgba(0, 0, 0, 0.534)!important;
 
+#navbarNav {
+    background: rgba(0, 0, 0, 0.596);
+    justify-content: center;
+  }
+
+@media (min-width: 992px) {
+    #navbarNav {
+      background: transparent!important;
     }
 }
-
-
 
 /* ~~~~~~~~~~~~~~~~~~~~~~ FIND OFFICE ~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -113,7 +196,10 @@ a:hover {
     text-transform: uppercase;
     position: relative;
     margin-left: 3rem;
-    padding-top: 100px;
+    padding-top: 115px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* ~~~~~~~~~~~~~~ FIND OFFICE TEXT ~~~~~~~~~~~~~~ */
@@ -144,212 +230,41 @@ a:hover {
 
 /* ~~~~~~~~~~~~~~ FIND OFFICE DISTRICT SELECT ~~~~~~~~~~~~~~ */
 
+.select-wrapper_input {
+    position: relative;
+    width: 100%;
+}
+
+.select-wrapper_input::after {
+    color: #2d3b61;
+    content: "Wybierz";
+    font-size: 10px;
+    opacity: 0.7;
+    margin-left: -62px;
+    right: 25px;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
 .district-select {
     cursor: pointer;
     border-radius: 50px;
     color: #2d3b61;
     font-size: 18px;
     outline: transparent;
-    /* padding: 16px 20px; */
+    -webkit-appearance: none;
+    appearance: none;
     margin-top: 20px;
     text-transform: uppercase;
     width: 400px;
+    padding: 10px;
 }
 
 /* ~~~~~~~~~~~~~~ FIND OFFICE RANGE ~~~~~~~~~~~~~~ */
 
-/* .range-wrap {
-    width: 400px;
-}
 
-#space-slider .slider-selection,
-.slider-handle,
-#budget-slider .slider-selection {
-    background: linear-gradient(to right, #ff9100, #ff6600) 100% 50% / 100% transparent;
-}
-
-.range-label {
-    margin-top: 30px;
-}
-
-
-#space-slider,
-#budget-slider {
-    width: 100%;
-
-}
-
-#space-slider.slider-handle {
-    position: relative;
-}
-
-#space-slider>div.min-slider-handle::after {
-    content: "kkk";
-    display: block;
-    margin: 20px 0;
-} */
-
-
-
-
-
-/* .range-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 430px;
-}
-
-.range-wrapper .range-label,
-.range-wrapper .range-input,
-.range-wrapper .double-range {
-    margin: 10px 0;
-}
-
-.range-wrapper .range-value,
-.range-wrapper .range-value-group {
-    display: flex;
-    flex-direction: row;
-    text-transform: initial;
-}
-
-.range-wrapper .range-value {
-    justify-content: flex-end;
-}
-
-.range-wrapper .range-value-group {
-    justify-content: space-around;
-}
-
-sup {
-    vertical-align: super;
-    font-size: 0.6em;
-}
-
-.range-input {
-    -webkit-appearance: none;
-    -moz-apperance: none;
-    background: transparent;
-    position: relative;
-    width: 100%;
-    margin: 0;
-    height: 20px;
-    overflow: hidden;
-    cursor: pointer;
-    z-index: 0;
-}
-
-.range-input::before,
-.range-input::after {
-    content: "";
-    position: absolute;
-    background: #ffffff;
-    height: 15px;
-    width: 3px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-}
-
-.range-input::before {
-    left: 0;
-}
-
-.range-input::after {
-    right: 0;
-}
-
-.range-input:focus {
-    outline: none;
-}
-
-.range-input::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 20px;
-    background: linear-gradient(to left, #ff5400, #ff881a) 100% 50%/100% 3px no-repeat transparent;
-}
-
-.range-input::-webkit-slider-thumb {
-    position: relative;
-    -webkit-appearance: none !important;
-    appearance: none;
-    height: 15px;
-    width: 15px;
-    background: #ff5400;
-    border-radius: 100%;
-    border: 0;
-    top: 50%;
-    margin-top: -7.5px;
-    pointer-events: all;
-    position: relative;
-    z-index: 1000;
-}
-
-.range-input::-moz-range-track,
-.range-input::-moz-range-progress {
-    width: 100%;
-    height: 20px;
-    background: linear-gradient(to bottom, #ffffff, #ffffff) 100% 50%/100% 3px no-repeat transparent;
-}
-
-.range-input::-moz-range-progress {
-    background: linear-gradient(to left, #ff5400, #ff881a) 100% 50%/100% 3px no-repeat transparent;
-}
-
-.range-input::-moz-range-thumb {
-    appearance: none;
-    margin: 0;
-    height: 15px;
-    width: 15px;
-    background: #ff5400;
-    border-radius: 100%;
-    border: 0;
-    z-index: 1000;
-    pointer-events: all;
-    position: relative;
-}
-
-.range-input::-ms-track {
-    width: 100%;
-    height: 20px;
-    border: 0;
-    color: transparent;
-    background: transparent;
-}
-
-.range-input::-ms-fill-lower {
-    background: linear-gradient(to left, #ff5400, #ff881a) 100% 50%/100% 3px no-repeat transparent;
-}
-
-.range-input::-ms-fill-upper {
-    background: linear-gradient(to bottom, #ffffff, #ffffff) 100% 50%/100% 3px no-repeat transparent;
-}
-
-.range-input::-ms-thumb {
-    appearance: none;
-    height: 15px;
-    width: 15px;
-    background: #ff5400;
-    border-radius: 100%;
-    border: 0;
-    top: 0;
-    margin: 0;
-    box-shadow: none;
-    z-index: 1000;
-    pointer-events: all;
-    position: relative;
-}
-
-.double-range {
-    position: relative;
-    height: 23px;
-}
-
-.double-range .range-input {
-    position: absolute;
-    pointer-events: none;
-    z-index: 1;
-} */
 
 
 
@@ -373,13 +288,17 @@ sup {
     /* opacity: 0.9; */
 }
 
+#find-office-btn {
+    width: 200px;
+    margin-top: 0;
+}
 
 /* ~~~~~~~~~~~~~~ FIND OFFICE MAP ~~~~~~~~~~~~~~ */
 
 .find-office-map {
     position: absolute;
     width: 430px;
-    top: 120px;
+    top: 230px;
     left: 550px;
 }
 
@@ -456,8 +375,6 @@ main {
 
 .top-offers a:hover {
     color: rgb(255, 67, 9);
-    transition: 1s;
-
 }
 
 .top-offers-art {
@@ -475,7 +392,7 @@ main {
 
 a:hover .overlay {
     opacity: .2;
-    transition: 1.5s;
+    transition: 0.1s;
 
 }
 
@@ -488,8 +405,8 @@ a:hover .overlay {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .3s ease;
-    background-color: rgb(255, 66, 9);
+    transition: .1s ease;
+    background-color: rgba(255, 255, 255, 0.808);
 }
 
 
@@ -596,11 +513,11 @@ a:hover .overlay {
 }
 
 
-.market-list-item a {
+.from-market a {
     color: rgb(75, 74, 74);
 }
 
-.market-list-item a:hover {
+.from-market a:hover {
     color: rgb(255, 67, 9);
 }
 
@@ -654,34 +571,38 @@ a:hover .overlay {
     padding-bottom: 50px;
 }
 
-.contact-form-item{
+.contact-form-item {
     margin: 15px 0px;
-    margin-right: 10px; 
+    margin-right: 10px;
     height: 40px;
-    /* width: 250px; */
+    width: 220px;
     border-radius: 50px;
 }
-.input-wrap{
+
+.input-wrap {
     margin: 0;
     padding: 0;
 }
-.range-wrap{
+
+.range-wrap {
     width: 30%;
 
 }
 
-@media (max-width: 600px){
-    .contact-form-item{
-        margin-right: 0px; 
+@media (max-width: 600px) {
+    .contact-form-item {
+        margin-right: 0px;
         width: 80%;
     }
-    .input-wrap{
+
+    .input-wrap {
         margin: 0;
         padding: 0;
     }
-    .range-wrap{
+
+    .range-wrap {
         width: 80%;
-    
+
     }
 }
 
@@ -745,7 +666,7 @@ a:hover .overlay {
         margin-top: 30px;
     }
 }
- 
+
 
 
 

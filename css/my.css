@@ -1,71 +1,9 @@
-.page-header {
-    left: 0;
-    padding-top: 54px;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.page-header-for-client {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-
-
-
-
-
-
-.img-in-header-ico {
-    margin-right: 18px;
-}
-
-
-
-
-
-
-
-
-
-
-.btn {
-    border-radius: 50px;
-    color: #ffffff;
-    cursor: pointer;
-    font-family: inherit;
-    outline: transparent;
-    padding: 20px 50px;
-    text-transform: uppercase;
-    background-image: linear-gradient(to left, #ff5400 0%, #ff881a 100%);
-}
-
-.btn.btn-contact {
-    border-radius: 0;
-    border-bottom-left-radius: 75px;
-    border-bottom-right-radius: 75px;
-    font-size: 16px;
-    position: absolute;
-    padding: 10px 50px;
-    right: -76px;
-    top: 50%;
-    transform: translateY(-50%) rotate(90deg);
-}
-
-
-
-
-
+/* ~~~~~~ BUDGET RANGE ~~~~~~~~ */
 
 .slider.slider-horizontal {
     width: 400px;
     height: 20px;
+    /* margin-top: 50px; */
 }
 
 .slider.slider-horizontal .slider-selection {
@@ -112,6 +50,22 @@
     width: 15px;
     height: 15px;
     background-image: linear-gradient(to left, #ff5400 0%, #ff881a 100%);
+}
+
+.ex6_2{
+    margin-top: 15px;
+}
+
+.ex6 {
+    margin-top: 50px;
+}
+
+#ex6SliderVal{
+    margin-left: 10px;
+}
+
+.currency{
+    margin-left: 214px;
 }
 
 /* .dropbtn {
@@ -169,45 +123,24 @@
 } */
 
 
-.btn-main {
-    border: 0;
-    color: #fff;
-    cursor: pointer;
-    font-family: inherit;
-    outline: transparent;
-    padding: 20px 50px;
-    text-transform: uppercase;
-}
-
-.btn-main.btn-for-client {
-    border-radius: 0;
-    font-size: 12px;
-    padding: 10px 0;
-    width: 120px;
-}
-
-.btn-main.btn-for-client-orange {
-    background-image: linear-gradient(to left, #ff5400 0%, #ff881a 100%);
-}
-
-.btn-main.btn-for-client-blue {
-    background-image: linear-gradient(to right, #327da5 0%, #2e446b 100%);
-}
-
-.btn-main.btn-for-client-orange {
-    border-bottom-left-radius: 24px;
-}
 
 
+
+/* ~~~~~~~~~~ DOUBLE RANGE ~~~~~~~~ */
 
 .range {
     width: 400px;
     height: 5px;
-    margin-top: 20px;
+    margin-top: 5px;
     border-radius: 4px;
     background-color: #fff;
     text-transform: none;
     position: relative;
+}
+
+.range.range-foot {
+    width: 300px;
+    
 }
 
 .range::after {
@@ -263,26 +196,32 @@
     background: transparent;
     color: #fff;
     margin-top: 20px;
-    width: 50px;
+    /* width: 10px; */
     border: none;
     display: inline;
     font-family: inherit;
     font-size: inherit;
     padding: none;
-    width: auto;
+    width: 50px;
     outline: 0;
-    margin-left: 12px;
+    margin-left: 140px;
+    margin-right: 15px;
+}
+
+.range_inpt1 {
+    margin-left: 0px;
 }
 
 .range_inpt2 {
-    margin-left: 239px;
+    margin-left: 250px;
+}
+
+.range_inpt2.range_inpt2-foot {
+    margin-left: 150px;
 }
 
 .reset-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-
-
-
 }
 
 input[type=number] {
@@ -290,11 +229,26 @@ input[type=number] {
 }
 
 
-
 .range-sup1 {
-    margin-left: -35px;
+    margin-left: -22px;
 }
 
 .range-sup2 {
-    margin-left: -35px;
+    margin-left: -22px;
 }
+
+
+@media (max-width: 1060px) {
+    .find-office-map {
+      display: none;
+    }
+}
+@media (max-width: 700px) {
+    #btn-hide {
+      display: none;
+    }
+}
+
+
+
+

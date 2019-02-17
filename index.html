@@ -2,27 +2,24 @@
 <html lang="pl">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.0/css/bootstrap-slider.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/my.css">
+
     <title>Wyszukiwarka biur</title>
 </head>
 
 <body>
     <div class="container-fluid header-bg">
-        <header>
-            <section class="page-header-for-client">
+        <header class="top-navs">
+            <nav class="page-header-for-client">
+
                 <!-- <div id="searchBtn">
                             <form action="" autocomplete="on">
                                 <input class="nav-btn-search" id="search" name="search" type="text" placeholder="Search"><input id="search_submit" value="Rechercher" type="submit">
@@ -43,21 +40,27 @@
                                 </ul>
                             </div>
                         </div> -->
+                
                 <button class="btn-main btn-for-client btn-for-client-orange">Strefa Klienta</button>
                 <button class="btn-main btn-for-client btn-for-client-blue">Kontakt</button>
-            </section>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar justify-content-between">
-                <a class="" href="#">
+            </nav>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar justify-content-around">
+                
+                <a class="brand" href="#">
                     <img src="img/logo.png" alt="logo">
                 </a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav w-100 d-flex justify-content-between">
+                    <ul class="navbar-nav d-flex justify-content-between">
+                        
                         <li class="nav-item main-nav-items">
-                            <a class="nav-links" href="#"><i class="fas fa-home-lg-alt"></i></a>
+                            <a class="nav-links" href="#"><img src="img/home-icon.png" alt="home icon"></a>
                         </li>
                         <li class="nav-item main-nav-items">
                             <a class="nav-links" href="#find-office">Znajdź biuro</a>
@@ -76,7 +79,10 @@
                         </li>
                     </ul>
                 </div>
+
             </nav>
+
+
         </header>
         <article class="find-office" id="find-office">
             <h1>

@@ -19,7 +19,7 @@ body {
 }
 
 a {
-    color: rgb(75, 74, 74);
+    /* color: rgb(75, 74, 74); */
     transition: 1s;
 
 }
@@ -48,7 +48,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: rgb(71, 71, 71);
+    color: #fff;
 
 }
 
@@ -58,9 +58,9 @@ a:hover {
     height: 100px;
     background: transparent !important;
     /* z-index: 20; */
-    padding: 0 40px;
+    /* padding: 0 40px; */
     z-index: 50;
-    font-size: 0.8em;
+    font-size: 0.9em;
 
 }
 
@@ -73,10 +73,13 @@ a:hover {
 
 .nav-links{
     background: linear-gradient(#ff9100, #ff6600) bottom / 0 .1em no-repeat;
-    transition: 1s background-size;
+    transition: .5s background-size;
     white-space: nowrap;
 }
 
+.nav-links:first-of-type{
+    margin-left: 20px;
+}
 
 .nav-links:hover {
 	background-size: 60% .1em;
@@ -86,6 +89,7 @@ a:hover {
     transition: 1s ease-in-out;
     display: flex;
     align-items: center;
+    flex-grow: 0;
     /* justify-content: center!important; */
 }
 
@@ -355,7 +359,7 @@ sup {
     outline: transparent;
     padding: 15px 50px;
     text-transform: uppercase;
-    /* margin-top: 10px; */
+    margin-top: 50px;
 }
 
 .btn-custom:hover {

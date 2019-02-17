@@ -21,25 +21,21 @@ document.addEventListener(
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~ SELECT DISTRICT ON MAP ~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 
 function toggleActiveMap() {
-    // console.log(this);
     this.classList.toggle("district-active");
     document.querySelector(`.${this.id}`).classList.toggle("text-map-active");
 }
-var svgDistrict = document.querySelectorAll(".district");
-svgDistrict.forEach(elem => elem.addEventListener("click", toggleActiveMap));
 
 function toggleActiveText(){
     this.classList.toggle("text-map-active");
     document.querySelector(`.${this.id}`).classList.toggle("district-active");
 }
 
+var svgDistrict = document.querySelectorAll(".district");
+svgDistrict.forEach(dist => dist.addEventListener("click", toggleActiveMap));
+
 
 var textMap = document.querySelectorAll('.text-map');
-textMap.forEach(txt => {
-    console.log(txt);
-
-    txt.addEventListener("click", toggleActiveText)
- } );
+textMap.forEach(txt => txt.addEventListener("click", toggleActiveText) );
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~ FIND OFFICE  ~~~~~~~~~~~~~~~~~~~~~~~~~~ 

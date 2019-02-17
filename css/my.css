@@ -18,6 +18,102 @@
 
 
 
+
+
+
+
+.img-in-header-ico {
+    margin-right: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+.btn {
+    border-radius: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: inherit;
+    outline: transparent;
+    padding: 20px 50px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to left, #ff5400 0%, #ff881a 100%);
+}
+
+.btn.btn-contact {
+    border-radius: 0;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    font-size: 16px;
+    position: absolute;
+    padding: 10px 50px;
+    right: -76px;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+
+
+
+
+
+.slider.slider-horizontal {
+    width: 400px;
+    height: 20px;
+}
+
+.slider.slider-horizontal .slider-selection {
+    background-image: linear-gradient(to left, #ff5400 0%, #ff881a 100%);
+}
+
+.slider-track {
+    border-radius: 0;
+
+}
+
+.slider.slider-horizontal .slider-track {
+    height: 5px;
+
+}
+
+.slider.slider-horizontal .slider-track::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    height: 15px;
+    width: 3px;
+    margin-top: 2px;
+    transform: translateY(-50%);
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.slider.slider-horizontal .slider-track::before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    height: 15px;
+    width: 3px;
+    margin-top: 2px;
+    transform: translateY(-50%);
+    z-index: 1;
+    left: 100%;
+    top: 0;
+}
+
+.slider-handle {
+    width: 15px;
+    height: 15px;
+    background-image: linear-gradient(to left, #ff5400 0%, #ff881a 100%);
+}
+
 /* .dropbtn {
     cursor: pointer;
     margin-right: 18px;
@@ -105,14 +201,15 @@
 
 
 .range {
-    width:400px;
-    height:5px;
+    width: 400px;
+    height: 5px;
     margin-top: 20px;
     border-radius: 4px;
     background-color: #fff;
     text-transform: none;
     position: relative;
 }
+
 .range::after {
     content: "";
     position: absolute;
@@ -123,7 +220,7 @@
     transform: translateY(-50%);
     z-index: 1;
     left: 0;
-    top:0;
+    top: 0;
 }
 
 .range::before {
@@ -135,12 +232,13 @@
     margin-top: 2px;
     transform: translateY(-50%);
     z-index: 1;
-   left: 100%;
-   top: 0;
+    left: 100%;
+    top: 0;
 }
 
 
-.range__button_1, .range__button_2 {
+.range__button_1,
+.range__button_2 {
     position: absolute;
     width: 15px;
     height: 15px;
@@ -151,42 +249,44 @@
     border-radius: 50%;
     background-image: linear-gradient(to left, #ff5400 0%, #ff881a 100%);
 }
-.range__between
-{
-  position: absolute;
+
+.range__between {
+    position: absolute;
     height: 5px;
-    width:0px;
+    width: 0px;
     border: none;
     background-image: linear-gradient(to left, #ff5400 0%, #ff881a 100%);
 }
-.range_inpt1, .range_inpt2
-{
+
+.range_inpt1,
+.range_inpt2 {
     background: transparent;
-    color:#fff;
-  margin-top:20px;
-  width: 50px;
+    color: #fff;
+    margin-top: 20px;
+    width: 50px;
     border: none;
-  display: inline;
-  font-family: inherit;
-  font-size: inherit;
-  padding: none;
-  width: auto;
+    display: inline;
+    font-family: inherit;
+    font-size: inherit;
+    padding: none;
+    width: auto;
     outline: 0;
     margin-left: 12px;
 }
-.range_inpt2
-{
+
+.range_inpt2 {
     margin-left: 239px;
 }
 
 .reset-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    
+
 
 
 }
+
 input[type=number] {
-    -moz-appearance:textfield;
+    -moz-appearance: textfield;
 }
 
 
@@ -194,6 +294,7 @@ input[type=number] {
 .range-sup1 {
     margin-left: -35px;
 }
+
 .range-sup2 {
     margin-left: -35px;
 }

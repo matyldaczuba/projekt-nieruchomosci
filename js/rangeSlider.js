@@ -203,3 +203,14 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
     }   
    
 }
+
+
+
+
+
+var slider = new Slider("#ex6");
+slider.on("slide", function(sliderValue) {
+	document.getElementById("ex6SliderVal").textContent = sliderValue;
+  var dada = (parseInt(sliderValue) * 4.3017);
+    document.getElementById('ex6SliderVal2').innerHTML = dada.toFixed(2);
+});

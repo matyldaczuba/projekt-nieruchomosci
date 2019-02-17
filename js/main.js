@@ -28,6 +28,20 @@ function toggleActiveMap() {
 var svgDistrict = document.querySelectorAll(".district");
 svgDistrict.forEach(elem => elem.addEventListener("click", toggleActiveMap));
 
+function toggleActiveText(){
+    this.classList.toggle("text-map-active");
+    document.querySelector(`.${this.id}`).classList.toggle("district-active");
+}
+
+
+var textMap = document.querySelectorAll('.text-map');
+textMap.forEach(txt => {
+    console.log(txt);
+
+    txt.addEventListener("click", toggleActiveText)
+ } );
+
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~ FIND OFFICE  ~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 
 var districtOptions = document.querySelectorAll(".district-select option");

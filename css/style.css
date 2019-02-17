@@ -319,6 +319,8 @@ a:hover {
 .find-office-map svg text {
     font-size: 12px;
     transition: .5s;
+    cursor: pointer;
+
 
 }
 

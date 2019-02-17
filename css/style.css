@@ -84,7 +84,7 @@ a:hover {
 .page-header {
     left: 0;
     padding-top: 54px;
-    /* position: relative; */
+    position: relative;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -116,14 +116,19 @@ a:hover {
     font-size: 12px;
     padding: 10px 0;
     width: 120px;
+    position: relative;
+
 }
 
 
 .img-in-header-ico {
     margin-right: 18px;
+    position: relative;
+
 }
 
 .btn-main.btn-for-client-orange {
+    position: relative;
     background-image: linear-gradient(to left, #ff5400 0%, #ff881a 100%);
 }
 
@@ -137,7 +142,9 @@ a:hover {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~ MAIN PAGE NAVBAR ~~~~~~~~~~~~~~~~~~~~~~ */
 
-
+.top-navs{
+    z-index: 20;
+}
 .main-navbar {
     height: 50px;
     background: transparent !important;

@@ -5,18 +5,17 @@
     font-weight: 400;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
+*,
+html,
+body {
+    font-family: "AvenirNext";
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: "AvenirNext";
-    margin: 0;
-    padding: 0;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -28,7 +27,7 @@ a {
     background: url(../img/bg-city.png) center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 95vh;
+    /* height: 95vh; */
     padding: 0;
     text-transform: uppercase;
     position: relative;
@@ -46,6 +45,8 @@ a {
     position: absolute;
     top: 0;
 }
+
+
 
 a:hover {
     text-decoration: none;
@@ -72,7 +73,7 @@ a:hover {
     font-size: 16px;
     position: absolute;
     padding: 10px 50px;
-    right: -76px;
+    right: -65px;
     top: 50%;
     transform: translateY(-50%) rotate(90deg);
 }
@@ -83,7 +84,7 @@ a:hover {
 .page-header {
     left: 0;
     padding-top: 54px;
-    position: absolute;
+    /* position: relative; */
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -93,11 +94,13 @@ a:hover {
     align-items: center;
     display: flex;
     flex-direction: row;
-    position: absolute;
+    justify-content: end;
+    /* position: absolute; */
     cursor: pointer;
     right: 0;
     top: 0;
 }
+
 .btn-main {
     border: 0;
     color: #fff;
@@ -132,7 +135,6 @@ a:hover {
     border-bottom-left-radius: 24px;
 }
 
-
 /* ~~~~~~~~~~~~~~~~~~~~~~ MAIN PAGE NAVBAR ~~~~~~~~~~~~~~~~~~~~~~ */
 
 
@@ -143,9 +145,8 @@ a:hover {
     padding: 0 3rem;
     z-index: 50;
     font-size: 0.9em;
-    position: absolute;
-    top: 40px;
     width: 100%;
+    margin-bottom: 20px;
 
 }
 
@@ -179,15 +180,16 @@ a:hover {
 
 
 #navbarNav {
-    background: rgba(0, 0, 0, 0.596);
+    background: rgba(0, 0, 0, 0.87);
     justify-content: center;
-  }
+}
 
 @media (min-width: 992px) {
     #navbarNav {
-      background: transparent!important;
+        background: transparent !important;
     }
 }
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~ FIND OFFICE ~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -196,8 +198,8 @@ a:hover {
     text-transform: uppercase;
     position: relative;
     margin-left: 3rem;
-    padding-top: 115px;
-    width: 70%;
+    /* padding-top: 115px; */
+    width: 90%;
     display: flex;
     flex-direction: column;
 }
@@ -205,14 +207,14 @@ a:hover {
 /* ~~~~~~~~~~~~~~ FIND OFFICE TEXT ~~~~~~~~~~~~~~ */
 
 .big-h {
-    font-size: 4rem;
+    font-size: 3.9rem;
     display: block;
     margin: 0;
 }
 
 .find-office-description {
     max-width: 500px;
-    font-size: 1.1em;
+    font-size: 1em;
     margin-top: 15px;
     position: relative;
     left: 15px;
@@ -256,7 +258,7 @@ a:hover {
     outline: transparent;
     -webkit-appearance: none;
     appearance: none;
-    margin-top: 20px;
+    margin-top: 10px;
     text-transform: uppercase;
     width: 400px;
     padding: 10px;
@@ -291,15 +293,21 @@ a:hover {
 #find-office-btn {
     width: 200px;
     margin-top: 0;
+    margin-bottom: 20px;
 }
 
 /* ~~~~~~~~~~~~~~ FIND OFFICE MAP ~~~~~~~~~~~~~~ */
 
 .find-office-map {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#warsaw-map {
+    max-width: 400px;
+
     position: absolute;
-    width: 430px;
-    top: 230px;
-    left: 550px;
+    left: -10%;
 }
 
 .district {
@@ -320,14 +328,16 @@ a:hover {
     font-size: 12px;
     transition: .5s;
     cursor: pointer;
-
-
 }
 
 .find-office-map svg .text-map-active {
     fill: #ffffff;
 }
-
+@media (max-width: 998px) {
+    .find-office-map {
+      display: none;
+    }
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -677,21 +687,14 @@ footer {
     background: #4d4d4d;
     color: #ffffff;
     font-size: 17px;
-    padding: 32px 0;
+    padding: 25px 0;
 }
 
-footer .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.footer-links {
-    margin-bottom: 15px;
+footer p {
+    margin: 0;
 }
 
 .footer-links-item {
-    padding: 0 5px;
     color: #fff;
 }
 

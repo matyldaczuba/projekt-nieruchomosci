@@ -101,6 +101,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: end;
+    justify-content: flex-end;
     /* position: absolute; */
     cursor: pointer;
     right: 0;
@@ -568,7 +569,7 @@ a:hover .overlay {
 
 /* ~~~~~~~~~~ FROM MARKET ~~~~~~~~~ */
 
-.from-market-list{
+.from-market-list {
     /* margin: 15px; */
 }
 
@@ -599,15 +600,16 @@ a:hover .overlay {
     position: relative;
 }
 
-.card-1{
+.card-1 {
     margin-bottom: 15px;
 }
+
 .card-margin {
     /* margin-bottom: 15px; */
     /* margin-right: 15px; */
     margin-top: 15px;
-    
-   
+
+
 }
 
 .small-h {
@@ -620,13 +622,14 @@ a:hover .overlay {
     text-transform: uppercase;
 }
 
-@media (max-width: 991px){
-    .from-market-list{
+@media (max-width: 991px) {
+    .from-market-list {
         margin: 20px;
         display: flex;
         justify-content: center;
         text-align: center;
     }
+
     .card {
         width: 90%;
     }
@@ -704,9 +707,10 @@ a:hover .overlay {
     }
 }
 
-.send-box{
+.send-box {
     margin-top: 20px;
 }
+
 .contact-button {
     font-size: 21px;
 }

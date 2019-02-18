@@ -1,7 +1,8 @@
 /* ~~~~~~ BUDGET RANGE ~~~~~~~~ */
 
 .slider.slider-horizontal {
-    width: 400px;
+    max-width: 400px;
+    width: 90%;
     height: 20px;
     /* margin-top: 50px; */
 }
@@ -130,7 +131,8 @@
 /* ~~~~~~~~~~ DOUBLE RANGE ~~~~~~~~ */
 
 .range {
-    width: 400px;
+    max-width: 400px;
+    width: 90%;
     height: 5px;
     margin-top: 5px;
     border-radius: 4px;
@@ -215,7 +217,7 @@
 }
 
 .range_inpt2 {
-    margin-left: 250px;
+    margin-right: 15px;
 }
 
 .range_inpt2.range_inpt2-foot {

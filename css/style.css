@@ -285,7 +285,8 @@ a:hover {
     appearance: none;
     margin-top: 10px;
     text-transform: uppercase;
-    width: 400px;
+    max-width: 400px;
+    width: 90%;
     padding: 10px;
 }
 

@@ -78,6 +78,12 @@ a:hover {
     transform: translateY(-50%) rotate(90deg);
 }
 
+@media (max-width: 950px){
+    .btn.btn-contact{
+        display: none;
+    }
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~ TOP NAVBAR CLIENT ~~~~~~~~~~~~~~~~~~~~~~ */
 
 
@@ -187,13 +193,22 @@ a:hover {
 
 
 #navbarNav {
-    background: rgba(0, 0, 0, 0.87);
     justify-content: center;
+    background: transparent;
+
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
     #navbarNav {
-        background: transparent !important;
+        background: rgba(0, 0, 0, 0.87);
+        /* width: 50%!important; */
+    }
+    .main-nav-items{
+        /* width: 50%; */
+    }
+    .main-navbar{
+        width: 50%!important;
+
     }
 }
 
@@ -220,7 +235,7 @@ a:hover {
 }
 
 .find-office-description {
-    max-width: 500px;
+    width: 500px;
     font-size: 1em;
     margin-top: 15px;
     position: relative;
@@ -312,7 +327,6 @@ a:hover {
 
 #warsaw-map {
     max-width: 400px;
-
     position: absolute;
     left: -10%;
 }
@@ -342,9 +356,35 @@ a:hover {
 }
 @media (max-width: 998px) {
     .find-office-map {
-      display: none;
+      left: 10%;
     }
 }
+
+@media (max-width: 905px){
+    .find-office-map {
+      }
+      #warsaw-map{
+          width: 350px;
+      }
+}
+
+@media (max-width: 800px){
+    .find-office-map {
+        display: none;
+      }
+
+      .big-h{
+          font-size: 3.2rem;
+      }
+      .find-office h1{
+        text-align: center;
+      }
+      .find-office-description{
+          width: 82%;
+      }
+      
+}
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 

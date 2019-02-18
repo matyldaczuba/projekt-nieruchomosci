@@ -78,8 +78,8 @@ a:hover {
     transform: translateY(-50%) rotate(90deg);
 }
 
-@media (max-width: 950px){
-    .btn.btn-contact{
+@media (max-width: 950px) {
+    .btn.btn-contact {
         display: none;
     }
 }
@@ -148,9 +148,10 @@ a:hover {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~ MAIN PAGE NAVBAR ~~~~~~~~~~~~~~~~~~~~~~ */
 
-.top-navs{
+.top-navs {
     z-index: 20;
 }
+
 .main-navbar {
     height: 50px;
     background: transparent !important;
@@ -165,7 +166,7 @@ a:hover {
 
 .nav-links,
 .main-nav-items {
-    padding: 15px 0px;
+    padding: 10px 0px;
     color: #fff;
     position: relative;
     text-align: center;
@@ -182,7 +183,7 @@ a:hover {
 }
 
 .nav-links:hover {
-    background-size: 60% .1em;
+    background-size: 80% .1em;
 }
 
 .navbar-collapse {
@@ -203,11 +204,13 @@ a:hover {
         background: rgba(0, 0, 0, 0.87);
         /* width: 50%!important; */
     }
-    .main-nav-items{
+
+    .main-nav-items {
         /* width: 50%; */
     }
-    .main-navbar{
-        width: 50%!important;
+
+    .main-navbar {
+        width: 50% !important;
 
     }
 }
@@ -354,35 +357,41 @@ a:hover {
 .find-office-map svg .text-map-active {
     fill: #ffffff;
 }
+
 @media (max-width: 998px) {
     .find-office-map {
-      left: 10%;
+        left: 10%;
     }
 }
 
-@media (max-width: 905px){
+@media (max-width: 905px) {
     .find-office-map {
-      }
-      #warsaw-map{
-          width: 350px;
-      }
+        top: 80px;
+
+    }
+
+    #warsaw-map {
+        width: 350px;
+    }
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
     .find-office-map {
         display: none;
-      }
+    }
 
-      .big-h{
-          font-size: 3.2rem;
-      }
-      .find-office h1{
+    .big-h {
+        font-size: 3.2rem;
+    }
+
+    .find-office h1 {
         text-align: center;
-      }
-      .find-office-description{
-          width: 82%;
-      }
-      
+    }
+
+    .find-office-description {
+        width: 82%;
+    }
+
 }
 
 
@@ -558,6 +567,10 @@ a:hover .overlay {
 
 /* ~~~~~~~~~~ FROM MARKET ~~~~~~~~~ */
 
+.from-market-list{
+    /* margin: 15px; */
+}
+
 .market-list-item {
     list-style: none;
 }
@@ -571,7 +584,6 @@ a:hover .overlay {
     margin-left: -1em;
 }
 
-
 .from-market a {
     color: rgb(75, 74, 74);
 }
@@ -580,15 +592,21 @@ a:hover .overlay {
     color: rgb(255, 67, 9);
 }
 
-.market-cards {
-    margin-bottom: 20px;
-}
-
-.card-margin {
-    margin-bottom: 15px;
-    margin-right: 15px;
+.card {
+    /* margin-bottom: 20px; */
     cursor: pointer;
     position: relative;
+}
+
+.card-1{
+    margin-bottom: 15px;
+}
+.card-margin {
+    /* margin-bottom: 15px; */
+    /* margin-right: 15px; */
+    margin-top: 15px;
+    
+   
 }
 
 .small-h {
@@ -601,7 +619,23 @@ a:hover .overlay {
     text-transform: uppercase;
 }
 
+@media (max-width: 991px){
+    .from-market-list{
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .card {
+        width: 90%;
+    }
+
+
+}
+
+
 /* ~~~~~~~~~TRUST US BRADS ~~~~~~~~~~ */
+
 .trust-brand-img {
     height: 55px;
     /* padding: 0 10px; */

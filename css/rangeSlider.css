@@ -50,9 +50,10 @@
     width: 15px;
     height: 15px;
     background-image: linear-gradient(to left, #ff5400 0%, #ff881a 100%);
+    z-index: 10;
 }
 
-.ex6_2{
+.ex6_2 {
     margin-top: 15px;
 }
 
@@ -60,11 +61,11 @@
     margin-top: 50px;
 }
 
-#ex6SliderVal{
+#ex6SliderVal {
     margin-left: 10px;
 }
 
-.currency{
+.currency {
     margin-left: 214px;
 }
 
@@ -140,7 +141,7 @@
 
 .range.range-foot {
     width: 300px;
-    
+
 }
 
 .range::after {
@@ -181,6 +182,7 @@
     border: none;
     border-radius: 50%;
     background-image: linear-gradient(to left, #ff5400 0%, #ff881a 100%);
+    z-index: 10;
 }
 
 .range__between {
@@ -236,11 +238,3 @@ input[type=number] {
 .range-sup2 {
     margin-left: -22px;
 }
-
-
-
-
-
-
-
-

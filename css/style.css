@@ -668,8 +668,12 @@ a:hover .overlay {
     margin: 15px 0px;
     margin-right: 10px;
     height: 40px;
-    width: 220px;
+    width: 230px;
     border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 5px;
+
 }
 
 .input-wrap {
@@ -699,6 +703,9 @@ a:hover .overlay {
     }
 }
 
+.send-box{
+    margin-top: 20px;
+}
 .contact-button {
     font-size: 21px;
 }
@@ -707,6 +714,7 @@ a:hover .overlay {
     margin-left: 55px;
     font-size: 18px;
     position: relative;
+    margin-top: 15px;
 }
 
 .contact-checkbox::before {
@@ -718,6 +726,7 @@ a:hover .overlay {
     position: absolute;
     top: 5px;
     width: 26px;
+    margin-top: 30px;
 }
 
 .contact-checkbox input[type="checkbox"] {

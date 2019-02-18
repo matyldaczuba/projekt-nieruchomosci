@@ -118,6 +118,10 @@ a:hover {
     text-transform: uppercase;
 }
 
+.btn-main:hover {
+    background: linear-gradient(to left, #fd960e, #fd7215) 100%;
+}
+
 .btn-main.btn-for-client {
     border-radius: 0;
     font-size: 12px;
@@ -139,8 +143,16 @@ a:hover {
     background-image: linear-gradient(to left, #ff5400 0%, #ff881a 100%);
 }
 
+.btn-main.btn-for-client-orange:hover {
+    background-image: linear-gradient(to left, #fd960e 0%, #fd7215 100%);
+}
+
 .btn-main.btn-for-client-blue {
     background-image: linear-gradient(to right, #327da5 0%, #2e446b 100%);
+}
+
+.btn-main.btn-for-client-blue:hover {
+    background-image: linear-gradient(to right, #3a8db9 0%, #3d5a8b 100%);
 }
 
 .btn-main.btn-for-client-orange {
